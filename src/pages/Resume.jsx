@@ -15,7 +15,7 @@ export default function Resume() {
           <h1 className="text-3xl font-bold text-slate-900">Aleksandra Jones</h1>
           <div className="flex flex-col md:flex-row gap-2 md:gap-6 mt-2 text-slate-600 text-sm">
             <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> Los Angeles, California</span>
-            <span className="flex items-center gap-1"><Phone className="w-4 h-4" /> +1 (301) 283-8648</span>
+            <span className="flex items-center gap-1"><Phone className="w-4 h-4" /> 867-5309</span>
             <span className="flex items-center gap-1"><Mail className="w-4 h-4" /> jones.aleksandra@gmail.com</span>
           </div>
         </div>
