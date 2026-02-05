@@ -22,21 +22,18 @@ export default function Layout({ children }) {
 
   return (
     <div className="min-h-screen bg-slate-50/50 text-slate-900 font-sans">
-      {/* Navigation Bar */}
       <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             
-            {/* Logo / Name Section (UPDATED) */}
             <Link 
               to="/" 
               onClick={() => setMobileMenuOpen(false)}
-              className="font-bold text-xl text-indigo-600 hover:opacity-80 transition-opacity"
+              className="font-bold text-xl text-purple-950 hover:opacity-80 transition-opacity"
             >
               Aleksandra Jones
             </Link>
 
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-1">
               {navItems.map((item) => (
                 <Link
@@ -44,7 +41,7 @@ export default function Layout({ children }) {
                   to={item.path}
                   className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-all ${
                     isActive(item.path)
-                      ? 'bg-indigo-50 text-indigo-700'
+                      ? 'bg-purple-50 text-purple-950' // UPDATED
                       : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                   }`}
                 >
@@ -54,24 +51,18 @@ export default function Layout({ children }) {
               ))}
             </div>
 
-            {/* Mobile Menu Button */}
             <div className="md:hidden">
               <Button 
                 variant="ghost" 
                 size="icon"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
-                {mobileMenuOpen ? (
-                  <X className="w-6 h-6 text-slate-600" />
-                ) : (
-                  <Menu className="w-6 h-6 text-slate-600" />
-                )}
+                {mobileMenuOpen ? <X className="w-6 h-6 text-slate-600" /> : <Menu className="w-6 h-6 text-slate-600" />}
               </Button>
             </div>
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden border-t border-slate-200 bg-white shadow-lg absolute w-full left-0">
             <div className="flex flex-col p-4 space-y-2">
@@ -82,7 +73,7 @@ export default function Layout({ children }) {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium transition-colors ${
                     isActive(item.path)
-                      ? 'bg-indigo-50 text-indigo-700'
+                      ? 'bg-purple-50 text-purple-950' // UPDATED
                       : 'text-slate-600 hover:bg-slate-50'
                   }`}
                 >
@@ -95,7 +86,6 @@ export default function Layout({ children }) {
         )}
       </nav>
 
-      {/* Main Page Content */}
       <main className="animate-in fade-in duration-500">
         {children}
       </main>
