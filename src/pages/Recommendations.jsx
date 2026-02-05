@@ -15,7 +15,7 @@ export default function Recommendations() {
         <CardContent className="p-8 md:p-12 space-y-6">
           <Quote className="w-12 h-12 text-purple-300 opacity-50" />
           <blockquote className="text-xl md:text-2xl font-serif leading-relaxed opacity-90">
-            "Aleksandra is a rad good ass human, what more could you ask for?"
+            "Aleksandra is a rad good ass human. The kind of person who bring a light to your life that will leave an impact that radiates through your soul. You will be lucky to have known her."
           </blockquote>
           <div className="flex items-center gap-4 pt-4">
             <div className="w-12 h-12 bg-purple-800 rounded-full flex items-center justify-center text-xl font-bold">
