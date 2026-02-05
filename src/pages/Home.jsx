@@ -136,7 +136,7 @@ export default function Home() {
               Today, as an educator in Los Angeles, I combine my background in literature with evidence-based strategies (like AVID and i-Ready data analysis) to help students find their voice. Whether we are analyzing complex texts or engaging in a Socratic seminar, my goal is to foster <strong>intellectual risk-taking</strong> and <strong>academic confidence</strong>.
             </p>
             <p>
-              Outside of the classroom, you can usually find me outdoors—surfing the Pacific waves, rock climbing, or running. I am also a published author and the founder of my school's Gardening and Creative Writing clubs.
+              Outside of the classroom, you can usually find me outdoors—surfing, rock climbing, or running. I am also a published author and the founder of my school's Gardening and Creative Writing clubs.
             </p>
           </div>
         </div>
