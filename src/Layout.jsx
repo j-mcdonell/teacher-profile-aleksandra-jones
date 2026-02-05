@@ -31,7 +31,7 @@ export default function Layout({ children }) {
             <Link 
               to="/" 
               onClick={() => setMobileMenuOpen(false)}
-              className="font-bold text-xl text-slate-900 hover:opacity-80 transition-opacity"
+              className="font-bold text-xl text-purple-950 hover:opacity-80 transition-opacity"
             >
               Aleksandra Jones
             </Link>
