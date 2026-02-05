@@ -15,7 +15,7 @@ export default function Resume() {
           <h1 className="text-3xl font-bold text-slate-900">Aleksandra Jones</h1>
           <div className="flex flex-col md:flex-row gap-2 md:gap-6 mt-2 text-slate-600 text-sm">
             <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> Los Angeles, California</span>
-            <span className="flex items-center gap-1"><Phone className="w-4 h-4" /> 867-5309</span>
+            <span className="flex items-center gap-1"><Phone className="w-4 h-4" /> +1 (301) 283-8648</span>
             <span className="flex items-center gap-1"><Mail className="w-4 h-4" /> jones.aleksandra@gmail.com</span>
           </div>
         </div>
@@ -32,8 +32,13 @@ export default function Resume() {
       </div>
 
       {showPdf ? (
-        <div className="w-full h-[800px] border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-          <iframe src="/resume.pdf" className="w-full h-full" title="Resume PDF" />
+        /* UPDATED: Changed h-[800px] to h-[85vh], and overflow-hidden to overflow-y-auto */
+        <div className="w-full h-[85vh] md:h-[800px] border border-slate-200 rounded-xl shadow-sm overflow-y-auto">
+          <iframe 
+            src="/resume.pdf" 
+            className="w-full min-h-full block" 
+            title="Resume PDF" 
+          />
         </div>
       ) : (
         <div className="space-y-8 animate-in fade-in duration-500">
